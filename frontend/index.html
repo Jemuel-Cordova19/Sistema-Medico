@@ -2,9 +2,28 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Sistema Médico - Inicio(index)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Login - Sistema Médico</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <h1>Sistema Médico</h1>
+    <div style="max-width: 350px; margin: 80px auto; font-family: sans-serif; padding: 20px; border: 1px solid #ccc; border-radius: 8px;">
+        <h2>Iniciar Sesión</h2>
+        <form id="loginForm">
+            <label>Correo Electrónico:</label><br>
+            <input type="email" id="correo" required style="width: 100%; margin-bottom: 15px; padding: 8px;"><br>
+            
+            <label>Contraseña:</label><br>
+            <input type="password" id="password" required style="width: 100%; margin-bottom: 15px; padding: 8px;"><br>
+            
+            <button type="submit" style="width: 100%; padding: 10px; background-color: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer;">
+                Ingresar
+            </button>
+        </form>
+
+        <p id="mensaje" style="margin-top: 15px; font-weight: bold;"></p>
+    </div>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
